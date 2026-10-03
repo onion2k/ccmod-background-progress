@@ -29,6 +29,15 @@ at https://code.claude.com/docs/en/plugins/mods/overview.
   `CLAUDE_CODE_PLUGIN_DIRS=<this folder>` for the desktop app.
 - `/ccprogress` in a session toggles the band; its Hide button hides it.
 
+## Releasing
+
+Installed copies update by the `version` in `.claude-plugin/plugin.json`,
+not by commit: a change pushed under the same version reads as "already at
+the latest version". Every change that installed copies should receive
+bumps the version in the same commit. Then `claude plugin marketplace
+update ccmod-background-progress` and `claude plugin update
+ccprogress@ccmod-background-progress` bring a machine up to date.
+
 ## How it learns things
 
 - Agents: `$.agent.list()`, polled every two seconds and after each tool call.
