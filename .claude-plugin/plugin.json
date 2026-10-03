@@ -1,0 +1,10 @@
+{
+  "name": "ccprogress",
+  "version": "0.1.0",
+  "description": "A band above the prompt showing running agents, background tasks and how far the session's plan has got.",
+  "types": "./types/index.d.ts",
+  "author": {
+    "name": "Chris Neale",
+    "email": "chris@usablehq.com"
+  }
+}
