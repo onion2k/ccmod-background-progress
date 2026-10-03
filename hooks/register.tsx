@@ -224,7 +224,7 @@ export const register: Register = on => {
           {agentsText}
         </Text>
         <Text dimColor>·</Text>
-        <Text color={p.tasks > 0 ? 'yellow' : undefined} dimColor={p.tasks === 0}>
+        <Text bold={p.tasks > 0} dimColor={p.tasks === 0}>
           {tasksText}
         </Text>
         {plan ? <Text dimColor>·</Text> : null}
