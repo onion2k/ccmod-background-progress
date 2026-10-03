@@ -71,4 +71,4 @@ are in [CLAUDE.md](CLAUDE.md).
 
 ## Licence
 
-MIT.
+MIT. See [LICENSE](LICENSE).

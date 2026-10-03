@@ -6,5 +6,6 @@
   "author": {
     "name": "Chris Neale",
     "email": "chris@usablehq.com"
-  }
+  },
+  "license": "MIT"
 }
