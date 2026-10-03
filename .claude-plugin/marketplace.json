@@ -1,0 +1,14 @@
+{
+  "name": "ccmod-background-progress",
+  "description": "The ccprogress mod: a band above the prompt for agents, background tasks and plan progress.",
+  "owner": { "name": "Chris Neale", "email": "chris@usablehq.com" },
+  "plugins": [
+    {
+      "name": "ccprogress",
+      "source": ".",
+      "description": "A band above the prompt showing running agents, background tasks and how far the session's plan has got.",
+      "category": "productivity",
+      "tags": ["mod", "progress", "agents", "tasks", "plan"]
+    }
+  ]
+}

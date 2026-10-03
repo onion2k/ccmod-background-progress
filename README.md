@@ -17,21 +17,39 @@ and no plan it stays out of the way.
 
 ## Install
 
-Clone it and point a session at the folder:
+The repository is its own marketplace, so two commands in a Claude Code
+session install the mod for every session, in the terminal and the desktop
+app alike:
+
+```
+/plugin marketplace add onion2k/ccmod-background-progress
+/plugin install ccprogress@ccmod-background-progress
+```
+
+Or from a shell:
+
+```bash
+claude plugin marketplace add onion2k/ccmod-background-progress
+claude plugin install ccprogress@ccmod-background-progress
+```
+
+A session already open picks it up with `/reload-plugins`. Updates arrive
+through `/plugin` as for any plugin.
+
+To try it for one session without installing, clone it and point the
+session at the folder:
 
 ```bash
 git clone https://github.com/onion2k/ccmod-background-progress.git
 claude --plugin-dir ./ccmod-background-progress
 ```
 
-For the desktop app, which takes no flags, name the folder in the
-environment instead:
+The desktop app takes no flags; for a one-off there, name the folder in
+`CLAUDE_CODE_PLUGIN_DIRS` instead. Edits to the folder hot-reload in an
+interactive session.
 
-```bash
-export CLAUDE_CODE_PLUGIN_DIRS=/path/to/ccmod-background-progress
-```
-
-Edits to the folder hot-reload in an interactive session.
+A mod runs with your permissions. To see what this one hooks and calls
+before loading it, run `claude plugin validate` on the clone.
 
 ## Use
 

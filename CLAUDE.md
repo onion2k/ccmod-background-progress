@@ -8,6 +8,8 @@ at https://code.claude.com/docs/en/plugins/mods/overview.
 ## Layout
 
 - `.claude-plugin/plugin.json`: the manifest, naming `types/index.d.ts`.
+- `.claude-plugin/marketplace.json`: makes the repo its own marketplace, so
+  `/plugin install ccprogress@ccmod-background-progress` works.
 - `hooks/hooks.json`: names the one hooks module.
 - `hooks/register.tsx`: the module. Pure helpers (`countChecklist`, `bar`)
   at the top, `register` beneath. Every value the band draws lives in
